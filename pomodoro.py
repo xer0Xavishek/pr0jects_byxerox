@@ -4,10 +4,10 @@ import time
 class PomodoroTimer:
     def __init__(self, master):
         self.master = master
-        self.master.title("Pomodoro Timer")
+        self.master.title("BRAC University Exam  Preparation App by Avishek + GPT")
         self.master.configure(bg="black")
 
-        self.minutes = 25
+        self.minutes = 30
         self.seconds = 0
         self.is_running = False
 
