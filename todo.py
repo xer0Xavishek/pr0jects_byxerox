@@ -10,7 +10,7 @@ class TodoListApp:
         self.master.configure(bg="#313866")
 
         self.style = ttk.Style()
-        self.style.theme_use("clam")  # Use clam theme as base
+        self.style.theme_use("clam")  # Use the clam theme
         self.style.configure("Treeview", background="#313866", fieldbackground="#313866", foreground="white", font=("Helvetica", 12))
         self.style.map("Treeview", background=[('selected', '#964EC2')])
 
