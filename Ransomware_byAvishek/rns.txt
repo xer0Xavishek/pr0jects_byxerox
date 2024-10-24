@@ -1,0 +1,15 @@
+This script does the following:
+
+It defines the target file extension, encrypted file extension, ransom note filename, and ransom amount.
+
+The encrypt_file function takes a file path and encryption key, encrypts the file using AES encryption, and saves the encrypted data to a new file with the .encrypted extension. It then deletes the original file.
+
+The decrypt_file function takes an encrypted file path and the encryption key, decrypts the file, and saves the decrypted data to a new file with the original extension. It then deletes the encrypted file.
+
+In the main function, a random 16-byte encryption key is generated.
+
+It iterates over files with the target extension, encrypts each file, and deletes the original file.
+
+It creates a ransom note file demanding a ransom payment in Bitcoin and providing instructions.
+
+After the ransom is paid (you need to implement your own payment verification logic), it decrypts the encrypted files using the same encryption key.
